@@ -46,6 +46,31 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
+- (void)remoteControlReceivedWithEvent:(UIEvent *)receivedEvent {
+    
+    if (receivedEvent.type == UIEventTypeRemoteControl) {
+        
+        switch (receivedEvent.subtype) {
+            case UIEventSubtypeRemoteControlPause:
+                // [self playAudio];
+                break;
+                
+            case UIEventSubtypeRemoteControlPlay:
+                //play code here
+                break;
+                
+            case UIEventSubtypeRemoteControlPreviousTrack:
+                // previous track code here
+                break;
+                
+            case UIEventSubtypeRemoteControlNextTrack:
+                //next track code here
+                break;
+                
+            default:
+                break;
+        }
+    }
+}
 
 @end

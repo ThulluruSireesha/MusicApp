@@ -15,6 +15,7 @@
 		186B966D1ECECB8E00071CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186B966B1ECECB8E00071CD8 /* LaunchScreen.storyboard */; };
 		186B96781ECECB8E00071CD8 /* MusicTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B96771ECECB8E00071CD8 /* MusicTaskTests.m */; };
 		186B96831ECECB8E00071CD8 /* MusicTaskUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B96821ECECB8E00071CD8 /* MusicTaskUITests.m */; };
+		186B96921ECED0E400071CD8 /* songTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B96911ECED0E400071CD8 /* songTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		186B967E1ECECB8E00071CD8 /* MusicTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		186B96821ECECB8E00071CD8 /* MusicTaskUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicTaskUITests.m; sourceTree = "<group>"; };
 		186B96841ECECB8E00071CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186B96901ECED0E400071CD8 /* songTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = songTableViewCell.h; sourceTree = "<group>"; };
+		186B96911ECED0E400071CD8 /* songTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = songTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		186B965C1ECECB8E00071CD8 /* MusicTask */ = {
 			isa = PBXGroup;
 			children = (
+				186B96901ECED0E400071CD8 /* songTableViewCell.h */,
+				186B96911ECED0E400071CD8 /* songTableViewCell.m */,
 				186B96601ECECB8E00071CD8 /* AppDelegate.h */,
 				186B96611ECECB8E00071CD8 /* AppDelegate.m */,
 				186B96631ECECB8E00071CD8 /* ViewController.h */,
@@ -207,6 +212,7 @@
 				TargetAttributes = {
 					186B96591ECECB8E00071CD8 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = V5Z9MG4PJ9;
 						ProvisioningStyle = Automatic;
 					};
 					186B96721ECECB8E00071CD8 = {
@@ -273,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186B96921ECED0E400071CD8 /* songTableViewCell.m in Sources */,
 				186B96651ECECB8E00071CD8 /* ViewController.m in Sources */,
 				186B96621ECECB8E00071CD8 /* AppDelegate.m in Sources */,
 				186B965F1ECECB8E00071CD8 /* main.m in Sources */,
@@ -426,7 +433,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V5Z9MG4PJ9;
 				INFOPLIST_FILE = MusicTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Mizpahsoft.MusicTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,7 +446,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V5Z9MG4PJ9;
 				INFOPLIST_FILE = MusicTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Mizpahsoft.MusicTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
